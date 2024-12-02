@@ -1,14 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Table</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <table style="width: 100%; height: 100%">
-      
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nested Tables</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 20px 0;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+        .nested-table {
+            width: 80%;
+            margin: auto;
+        }
+        .black-cell {
+            background-color: black;
+            color: white;
+            font-weight: bold;
+        }
+        ul {
+            padding-left: 20px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <table>
         <thead>
             <tr>
                 <th colspan="2">Main Table</th>
@@ -20,12 +43,8 @@
                     <!-- Nested Table 1 -->
                     <table class="nested-table">
                         <thead>
-							 <tr>
-                <th colspan="2">Nested Table 2</th>
-            </tr>
-        
                             <tr>
-                                
+                                <th>Nested Table 1</th>
                                 <th>Column 1</th>
                                 <th>Column 2</th>
                             </tr>
@@ -34,12 +53,12 @@
                             <tr>
                                 <td>Row 1</td>
                                 <td>Data 1</td>
-                                
+                                <td>Data 2</td>
                             </tr>
                             <tr>
                                 <td>Row 2</td>
                                 <td>Data 3</td>
-                                
+                                <td>Data 4</td>
                             </tr>
                         </tbody>
                     </table>
@@ -48,19 +67,23 @@
                     <!-- Nested Table 2 -->
                     <table class="nested-table">
                         <thead>
-							 <tr>
-                <th colspan="2">Nested Table 1</th>
-            </tr>
-        
-                           
+                            <tr>
+                                <th>Nested Table 2</th>
+                                <th>Column 1</th>
+                                <th>Column 2</th>
+                            </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td class="black-cell" colspan="2">HTML</td>
-                             
-                              
+                                <td class="black-cell">HTML</td>
+                                <td>Value 1</td>
+                                <td>Value 2</td>
                             </tr>
-                           
+                            <tr>
+                                <td>Example</td>
+                                <td>Value 3</td>
+                                <td>Value 4</td>
+                            </tr>
                         </tbody>
                     </table>
                 </td>
@@ -94,11 +117,11 @@
                     <!-- Nested Table 4 -->
                     <table class="nested-table">
                         <thead>
-								 <tr>
-                <th colspan="2">Nested Table 4</th>
-            </tr>
-        
-                           
+                            <tr>
+                                <th>Nested Table 4</th>
+                                <th>Column 1</th>
+                                <th>Column 2</th>
+                            </tr>
                         </thead>
                         <tbody>
                             <tr>
@@ -109,15 +132,19 @@
                                         <li>List item 3</li>
                                     </ul>
                                 </td>
-                              
+                                <td>Details</td>
+                                <td>Information</td>
                             </tr>
-                           
+                            <tr>
+                                <td>Notes</td>
+                                <td>Details</td>
+                                <td>Info</td>
+                            </tr>
                         </tbody>
                     </table>
                 </td>
             </tr>
         </tbody>
-    
     </table>
-  </body>
+</body>
 </html>
